@@ -1,0 +1,45 @@
+## Git/Github Intermediário p1
+
+- O que são Branches?
+
+É uma bifurcação do conteúdo atual (do site). É onde fica todo o progresso ja feito armazenado e pronto pra uso.
+
+- Branches Main ou Master
+
+Nada mais é que os nomes padrões que vem de Branches. Porem tem como mudar esses nomes. 
+
+Obs: Pode haver conflito de Branches caso você esteja em uma com um nome diferente na maquina e no servidor. (Na hora depois de fazer o commit do seus arquivos verifica se precisa fazer um pull antes)
+
+-  O que é a tag HEAD
+
+É praticamente onde você esta localizado e pra onde esta apontando. 
+
+- Git Checkout -b: Usado para se movimentar pelas Branches e cria uma Branche nova. 
+
+Obs: Se for so se mover entre Branches não usa a flag -b.
+
+Obs2: O que você tiver no historico de commits vai com você.
+
+- Merge: Junta duas Branches.
+
+-  Git Branch: Indica as Branches que temos na maquina e te mostra em qual você está.
+
+-  Git branch -m: Dentro da Branch se caso quer mudar o nome dela usa esse comando.
+
+- Git branch -m nome da Branch mais o nome novo: Caso esteja em outra Branch e queira mudar o nome de outra Branch se usa esse comando.
+
+- Git branch -d e o nome da Branch: Deleta a branch.
+
+-  Stash: É um local onde você armazena alguns arquivos que esteja alterando, sem que esses arquivos fique com você na hora de se mover entre branches. Dessa forma você evita contaminar outras Branches caso aja algum bug. (estoque temporário).
+
+Comandos do Stash:
+
+- Git stash save: Pega tudo que tiver no stage ou index e coloca nessa "caixa de armazenamento". É bom criar um com uma string indicando as mudanças.
+
+- Git stash list: Mostra onde esta o stash atual e o que foi feito nele de acordo com a descrição que você colocou.
+
+- Git stash pop e o index do qual quer abrir e mexer (ex: número 1,2 ou3...): Dessa forma os arquivos que estavam associados nessa stash já podem ser mexidos alterados e commitados.
+
+- Git stash clear: Limpa o stash.
+
+ 
