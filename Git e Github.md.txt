@@ -1,0 +1,63 @@
+## Git/Github
+
+O curso básico de Git trouxe muita informações importantes para a base do curso como:
+
+-  O que é o Git - É um software de versionamento de código, que ajuda a monitora e criar diferentes versões do nosso código dentro de nossa maquina.
+
+-  O que é a Github - É uma empresa da Microsoft. É um repositório online onde vamos armazenar nosso código.
+
+Comando Básicos do Git 
+
+Windows
+
+- cd - selecionar e navegar pelas pastas e arquivos.
+
+-  dir - listar.
+
+-  mkdir - criar pasta ou arquivo.
+
+-  del / rmdir - deletar a pasta ou arquivo. (Usando duas flags S/ Q/ junto com rmdir exclui o repositório todo).
+
+-  cd.. voltar.
+
+- ctrl L/ cls - limpar.
+
+-  echo - faz um print e usando (>) cria arquivos também.
+
+- Git add - adiciona a area de staged
+
+- Git commit Prepara o arquivos para ir para nuvem
+
+- Git push - manda para a nuvem
+
+-  Git pull - puxa da nuvem para a sua maquina
+
+- Git status - mostra o status atual dos arquivos e pastas
+
+-  Git clone - copia um repositório do Github para sua maquina via Gitbash
+
+Instalação do Git link:
+
+([https://git-scm.com/book/pt-br/v2/Come%C3%A7ando-Instalando-o-Git](https://git-scm.com/book/pt-br/v2/Começando-Instalando-o-Git))
+
+O que é o Sha1:
+
+-  É um conjunto de funções hash criptográficas projetadas pela NSA (Agência de segurança nacional dos EUA). A encriptação gera um conjunto de 40 caracteres que esta sempre mudando a partir do mundo que há modificações no arquivo em questão. É usado para proteger o código e seu trabalho.
+
+Objetos internos do Git
+
+- Blobs - É um objeto que vai armazenar arquivos com metadados contendo um sha1 especifico para esse Blob.
+
+- Trees - É onde se armazenas os Blobs. Ela também contem metadados, guardando também os nomes dos arquivos. Ela é responsável por montar a estruturas dos arquivos e ela pode tanto apontar para outros Blobs ou outras Trees. Elas também tem um sha1 especifico e se for modificado algo também reflete nas Blobs que ela esta apontando.
+
+- Commits - É o objeto que junta tudo as Trees, parente, autor e mensagem. É onde fica registrado tudo dando significado para tudo já feito, registrando data e hora de quando foi criado. Eles também possui um sha1 dos seus metadados e da mesma forma que nas Trees se for modificado algo irá refletir naquilo que ele esta apontando. 
+
+Ciclo de vida
+
+- Git init - cria um repositório
+
+- Tracked - Arquivos que temos ciência
+
+- Untracked - Arquivos que não temos ciência
+
+Obs: Dentro do tracked existe três estados de arquivos (unmodified que é o arquivo base que você criou), (modified que é o arquivo que ja sofreu alterações) e (staged que é os arquivos preparados para o commit). Estes estágios são como um ciclo, pois depois de comitado o arquivo ele volta a ser um arquivo base estando em unmodfied e assim segue o clico por diante. Caso esse arquivo seja removido dai ele fica como Untracked.
